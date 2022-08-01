@@ -11,6 +11,8 @@ echo $now
 aws configure set aws_access_key_id $KEY
 aws configure set aws_secret_access_key $SECRET
 
+aws configure set s3.max_concurrent_requests 1
+
 aws s3 sync /backup/ s3://$BUCKET/  --delete
 
 echo "Done"
