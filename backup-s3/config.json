@@ -11,6 +11,7 @@
     "awssecret": "",
     "bucketname": ""
   },
+  "init": "false",
   "schema": {
     "awskey": "str",
     "awssecret": "str",
